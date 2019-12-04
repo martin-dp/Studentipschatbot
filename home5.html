@@ -1,1 +1,172 @@
-a
+
+<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="Studentips chatbot on Facebook Messenger">
+    <meta name="description" content="Studentips: Studentips est un chatbot messenger destiné à aider les étudiants grâce à des bons plans, des codes promos ainsi que des offres de jobs et de stages!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studentips chatbot on Facebook Messenger</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="icon" type="image/png" sizes="96x96" href="https://chatfuel.com/static/landing/v3/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://chatfuel.com/static/landing/v3/favicon/favicon-32x32.png">
+    <link rel="icon" href="https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/24296573_181911965725170_374193831839528572_n.jpg?_nc_cat=109&_nc_ohc=jddWGFJJ0VoAQlFLKsnjQKfeI5UIyykM33WIjA4WQBCn-Je4RlW7_LbRw&_nc_ht=scontent.xx&oh=80f4e8ce688bb8f07b513f5463c95d4a&oe=5E83E360')"/>
+
+    <!-- Your styles -->
+    <link rel="stylesheet" href="https://chatfuel.com/bot_landings/static/styles/bootstrap-theme.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+    <link rel="stylesheet" href="https://chatfuel.com/bot_landings/static/styles/bootstrap.css">
+    <link rel="stylesheet" href="https://chatfuel.com/bot_landings/static/styles/main.css?r=1">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Studentips chatbot">
+    <meta property="og:description" content="Studentips: Studentips est un chatbot messenger destiné à aider les étudiants grâce à des bons plans, des codes promos ainsi que des offres de jobs et de stages!">
+    <meta property="og:image" content="https://chatfuel.com/bot_landings/static/images/chatfuel-page-landing-og-image.png">
+    <meta property="og:url" content="https://chatfuel.com/bot/studentipschatbot">
+
+    <!-- build:js scripts/main.min.js -->
+    <script type="text/javascript" src="https://chatfuel.com/bot_landings/static/scripts/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="https://chatfuel.com/bot_landings/static/scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="https://chatfuel.com/bot_landings/static/scripts/slick.min.js"></script>
+    <script type="text/javascript" src="https://chatfuel.com/bot_landings/static/scripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://chatfuel.com/bot_landings/static/scripts/mobile-detect.js"></script>
+    <script type="text/javascript" src="https://chatfuel.com/bot_landings/static/scripts/mobile-detect-modernizr.js"></script>
+
+    <script src="https://chatfuel.com/bot_landings/static/scripts/main.js"></script>
+    <!-- endbuild -->
+
+  </head>
+<body class="">
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+            document.body.classList.add("body_show");
+        }, 1000)
+    });
+
+    window.onload = function () {
+        document.body.classList.add("body_show");
+    };
+
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '1678638095724206',
+            xfbml: true,
+            version: 'v2.6'
+        });
+        try {
+            window.app.init();
+        } catch (err) {
+            console.log('err', err);
+            document.addEventListener("DOMContentLoaded", function () {
+                window.app.init();
+            });
+        }
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = '//connect.facebook.net/en_US/sdk.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="container">
+
+    <div class="left-col">
+       <div class="fb-button-box" style="position: relative;">
+          <div class="fb-button-place fb-button-place_rendered" ng-bind-html="bsc.testPageCode"
+               ng-class="{'fb-button-place--hide': bsc.link, 'loaded' : bsc.fbButtonLoadedEmulate}"
+               fb-test-bot-btn-click="" link="bsc.link">
+              <div class='fb-send-to-messenger' id='fb-send-to-messenger' messenger_app_id='1678638095724206'
+                   page_id='176485042934529' data-ref='b64:Q0ZMOg==' color='blue' size='xlarge'></div>
+          </div>
+          <div class="open-in-messenger">
+              <a class="link" href="https://m.me/studentipschatbot" target="_blank">view on messenger.com</a>
+          </div>
+      </div>
+      <span class="fb-button-box-descript">Just start a chat in Facebook Messenger</span>
+    </div>
+          
+    </div>
+
+    <div class="iphone">
+        <div class="iphone__body-overlay">
+            <div class="iphone__body"></div>
+        </div>
+        <div class="phone-display">
+            <div class="display-content">
+
+                <div class="display-bot-header clearfix">
+                    <div class="display-bot-header__avatar"
+                         style="background-image: url('https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/24296573_181911965725170_374193831839528572_n.jpg?_nc_cat=109&_nc_ohc=jddWGFJJ0VoAQlFLKsnjQKfeI5UIyykM33WIjA4WQBCn-Je4RlW7_LbRw&_nc_ht=scontent.xx&oh=80f4e8ce688bb8f07b513f5463c95d4a&oe=5E83E360'); "></div>
+
+                    <div class="display-bot-header__info">
+                        <div class="display-bot-header__title">Studentips</div>
+                        <div class="display-bot-header__likes"></div>
+                        <div class="display-bot-header__description">Communauté</div>
+                    </div>
+                </div>
+
+                <div class="frames">
+                    <div class="frame-container">
+                        <div class="bot-avatar-picture" style="background-image: url('https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/24296573_181911965725170_374193831839528572_n.jpg?_nc_cat=109&_nc_ohc=jddWGFJJ0VoAQlFLKsnjQKfeI5UIyykM33WIjA4WQBCn-Je4RlW7_LbRw&_nc_ht=scontent.xx&oh=80f4e8ce688bb8f07b513f5463c95d4a&oe=5E83E360'); "></div>
+                        <div class="plugins-container">
+    <div class="plugin text-plugin clearfix">
+        <div class="plugin__text-bubble">
+        <span class="plugin__text">
+        Salut Jessie! <br>Bienvenue dans le chatbot StudenTips!<br><br>Je me présente, je suis Martin et je vais t&#39;aider à profiter au mieux de ta vie étudiante ! :O<br><br>N&#39;hésite pas à faire remonter tes remarques pour m&#39;améliorer :)!<br><br>Si tu es perdu(e), tu peux utiliser le menu déroulant pour revenir ici ;)<br><br>Pour commencer, j&#39;ai besoin d&#39;en savoir un peu plus sur toi :)
+        </span>
+        </div>
+    </div>
+                        </div>
+                    </div>
+        <div class="quickreply">
+                    <a class="quickreply__button">Etudiant</a>
+                    <a class="quickreply__button">Entreprise</a>
+        </div>
+                </div>
+            </div>
+        </div>
+        <div class="phone-footers phone-footers_tall">
+            <div class="fb-button-place fb-button-place_rendered" ng-bind-html="bsc.testPageCode"
+                 ng-class="{'fb-button-place--hide': bsc.link, 'loaded' : bsc.fbButtonLoadedEmulate}"
+                 fb-test-bot-btn-click="" link="bsc.link">
+                <div class='fb-send-to-messenger' id='fb-send-to-messenger' messenger_app_id='1678638095724206'
+                     page_id='176485042934529' data-ref='b64:Q0ZMOg==' color='blue' size='xlarge'></div>
+            </div>
+            <div class="open-in-messenger" style="position: relative;">
+                <a class="link" href="https://m.me/studentipschatbot" target="_blank">view on messenger.com</a>
+            </div>
+            <div class="phone-footers__description">
+                This is just a preview. To see the full functionality just start a chat with the bot.
+            </div>
+            <div class="phone-footers__close-button"></div>
+        </div>
+    </div>
+
+
+    <div class="right-col">
+       <div class="bot-header" style="margin-top: 0px;">
+            <div class="bot-header__avatar" style="background-image: url('https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/24296573_181911965725170_374193831839528572_n.jpg?_nc_cat=109&_nc_ohc=jddWGFJJ0VoAQlFLKsnjQKfeI5UIyykM33WIjA4WQBCn-Je4RlW7_LbRw&_nc_ht=scontent.xx&oh=80f4e8ce688bb8f07b513f5463c95d4a&oe=5E83E360')"></div>
+        </div>
+        <div class="bot-info-container">
+            <h1 class="bot-title">Studentips</h1>
+            <div class="bot-description">Studentips est un chatbot messenger destiné à aider les étudiants grâce à des bons plans, des codes promos ainsi que des offres de jobs et de stages!</div>
+        </div>
+     
+
+</div>
+</body>
+</html>
+
